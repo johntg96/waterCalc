@@ -1,0 +1,41 @@
+<!DOCTYPE=html>
+<html>
+<title>Itasca County YMCA Water Calculator</title>
+<meta charset=utf-8>
+<link rel='stylesheet' type='text/css' href='styles.css'>
+<body>
+	<h1 id='title'>WaterCalc</h1>
+	<h4 id='brand'>Itasca County Family YMCA Pool Operator Toolset</h4>
+	<div class='container'>
+		<div class='center'>
+			<div id='hottub-form'>
+				<form>
+					<label class='reg-text' for='hottub-alk'>Hot-Tub Alkalinity:</label><br>
+					<input type='text' id='hottub-alk' name='hottub-alk'><br>
+
+					<label class='reg-text' for='hottub-hard'>Hot-Tub Hardness:</label><br>
+					<input type='text' id='hottub-hard' name='hottub-hard'><br>
+					<input class='test-btn' type='submit' value='Calculate' onclick='testHottub()'>
+				</form>
+			</div>
+			<div id='pool-form'>
+				<form>
+					<label class='reg-text' for='pool-alk'>Pool Alkalinity:</label><br>
+					<input type='text' id='pool-alk' name='pool-alk'><br>
+
+					<label class='reg-text' for='pool-hard'>Pool Hardness:</label><br>
+					<input type='text' id='pool-hard' name='pool-hard'><br>
+					<input class='test-btn' type='submit' value='Calculate' onclick='testPool()'>
+				</form>
+			</div>
+			<div id='results'></div>
+			<button id='hottub-btn' class='vertical-center' onclick='openHottubMenu()'>Hot-Tub</button>
+			<button id='pool-btn' class='vertical-center' onclick='openPoolMenu()'>Pool</button>
+		</div>
+		<div id='footer'>
+			<p>Measurements are based on an <em>88,000</em> gallon Pool and <em>5,000</em> gallon Hot-Tub  -  &#169; 2020 John Garrison</p>
+		</div>
+	</div>
+	<script src='calc.js'></script>
+</body>
+</html>

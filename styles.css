@@ -1,0 +1,165 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&family=Open+Sans&family=Raleway:wght@200&display=swap');
+
+body {
+	background-color: #F2F2F2;
+}
+
+#title {
+	text-align: center;
+	font-family: 'Lemonada', sans-serif;
+}
+
+#brand {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+#description {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.reg-text {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.bold-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#hottub-btn {
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color:#f24537;
+	border-radius:6px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 2em;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+
+#hottub-btn:hover {
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+	background-color: #c62d1f;
+}
+
+#hottub-btn:active {
+	position:relative;
+	top:1px;
+}
+
+#pool-btn {
+	box-shadow:inset 0px 1px 0px 0px #1d93ed;
+	background:linear-gradient(to bottom, #2c9ec7 5%, #19459c 100%);
+	background-color:#2c9ec7;
+	border-radius:6px;
+	border:1px solid #0d526b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 2em;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1d3d75;
+}
+
+#pool-btn:hover {
+	background:linear-gradient(to bottom, #19459c 5%, #2c9ec7 100%);
+	background-color:#19459c;
+}
+
+#pool-btn:active {
+	position:relative;
+	top:1px;
+}
+
+#hottub-form {
+	display: none;
+}
+
+#pool-form {
+	display: none;
+}
+
+form {
+	margin-top: 3em;
+}
+
+input {
+	margin: 0.2em 0 0.5em 0;
+}
+
+.test-btn {
+	box-shadow: 3px 4px 0px 0px #805e24;
+	background:linear-gradient(to bottom, #e0e63c 5%, #e6a015 100%);
+	background-color:#e0e63c;
+	border-radius:5px;
+	border:1px solid #947822;
+	display:inline-block;
+	cursor:pointer;
+	color:#424242;
+	font-family:Arial;
+	font-size: 1em;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #a6ab22;
+}
+
+.test-btn:hover {
+	background:linear-gradient(to bottom, #e6a015 5%, #e0e63c 100%);
+	background-color:#e6a015;
+}
+
+.test-btn:active {
+	position:relative;
+	top:1px;
+}
+
+#results {
+	display: none;
+	margin-top: 8em;
+	margin-bottom: 3em;
+}
+
+#footer {
+	position:fixed;
+   	left:0px;
+   	bottom:0px;
+   	height:3em;
+   	width:100%;
+   	background:#2E2E2E;
+}
+
+#footer p {
+	text-align: center;
+	margin-bottom: 0.3em;
+	color: #DCDCDC;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
