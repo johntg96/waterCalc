@@ -249,15 +249,15 @@ let testBalance = () => {
 		satTDSf = 12.2;
 	}
 
-	let saturationIndex = satPh + satTempTf + satHardCf + satAlkAf - satTDSf;
+	let saturationIndex = Math.round(10*(satPh + satTempTf + satHardCf + satAlkAf - satTDSf))/10;
 	let scaleOrCorrode = undefined;
 
-	if(saturationIndex < -0.4) {
-		scaleOrCorrode = '<span style="color: #593928;font-family:\'Frijole\', sans,serif;font-size: 3em;">corrosive</span>';
-	} else if(saturationIndex > 0.4) {
-		scaleOrCorrode = '<span style="color: #7a7f2d;font-family:\'Frijole\', sans,serif;font-size: 3em;">scaling</span>';
+	if(saturationIndex <= -0.4) {
+		scaleOrCorrode = '<span style="color: #593928;font-family:\'Frijole\', sans,serif;font-size: 2.8em;">Corrosive</span>';
+	} else if(saturationIndex >= 0.4) {
+		scaleOrCorrode = '<span style="color: #7a7f2d;font-family:\'Frijole\', sans,serif;font-size: 2.8em;">Scaling</span>';
 	} else {
-		scaleOrCorrode = '<span style="color: #1c7dd8;font-family:\'Faster One\', sans,serif;font-size: 3em;">&nbsp;balanced</span>';
+		scaleOrCorrode = '<span style="color: #1c7dd8;font-family:\'Faster One\', sans,serif;font-size: 2.8em;">Balanced</span>';
 	}
 
 	if(errorInput == false) {
@@ -267,7 +267,7 @@ let testBalance = () => {
 
 		let results = document.getElementById('results');
 		results.style.display = 'block';
-		results.innerHTML = '<h4 class="bold-text" style="text-align:center;">Saturation Index: <strong>' + Math.round(10*saturationIndex)/10 + '</strong><br>' + scaleOrCorrode + '</h4>';
+		results.innerHTML = '<h4 class="bold-text" style="text-align:center;">Saturation Index: <strong>' + saturationIndex + '</strong><br>' + scaleOrCorrode + '</h4>';
 	} else {
 		document.getElementById('pool-form').style.display = 'none';
 		document.getElementById('hottub-form').style.display = 'none';
