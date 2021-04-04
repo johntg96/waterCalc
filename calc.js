@@ -143,10 +143,10 @@ let testPool = () => {
 	let poolAlkTest = undefined;
 	let poolHardTest = undefined;
 
-	if(poolAlk > 100) {
-		desiredPoolAlk = poolAlk - 100;
+	if(poolAlk > 50) {
+		desiredPoolAlk = poolAlk - 50;
 	} else {
-		desiredPoolAlk = 100 - poolAlk;
+		desiredPoolAlk = 50 - poolAlk;
 	}
 
 	if(poolHard > 300) {
