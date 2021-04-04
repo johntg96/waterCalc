@@ -301,7 +301,7 @@ let testBalance = () => {
 	} else if(saturationIndex >= 0.4) {
 		scaleOrCorrode = '<span style="color: #7a7f2d;font-family:\'Frijole\', sans,serif;font-size: 2.8em;">Scaling</span>';
 	} else {
-		scaleOrCorrode = '<span style="color: #1c7dd8;font-family:\'Faster One\', sans,serif;font-size: 2.8em;">Balanced</span>';
+		scaleOrCorrode = '<span style="color: #86bff4;font-family:\'Faster One\', sans,serif;font-size: 2.8em;">Balanced</span>';
 	}
 
 	if(errorInput == false) {
