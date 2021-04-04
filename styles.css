@@ -144,8 +144,7 @@ p {
 }
 
 #hottub-btn:hover {
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
-	background-color: #c62d1f;
+	background:linear-gradient(to bottom, #841f16 5%, #9e251a 100%);
 	-moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
@@ -176,8 +175,8 @@ p {
 }
 
 #pool-btn:hover {
-	background:linear-gradient(to bottom, #19459c 5%, #2c9ec7 100%);
-	background-color:#19459c;
+	background:linear-gradient(to bottom, #185166 5%, #1f6984 100%);
+	background-color:#19366F;
 	-moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow:         inset 0 0 10px #000000;
@@ -225,8 +224,8 @@ p {
 }
 
 #saturation-index-btn:hover {
-	background:linear-gradient(to bottom, #286e16 5%, #3aa822 100%);
-	background-color:#286e16;
+	background:linear-gradient(to bottom, #1c4c10 5%, #2a7018 100%);
+	background-color:#154708;
 	-moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow:         inset 0 0 10px #000000;
