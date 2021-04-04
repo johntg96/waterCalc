@@ -1,68 +1,67 @@
 <!DOCTYPE=html>
 <html>
-<title>Itasca County YMCA Water Calculator</title>
+<title>YMCA Water Calculator</title>
 <meta charset=utf-8>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel='stylesheet' type='text/css' href='styles.css'>
-<body>
-	<div class='container'>
+	<div id='wrapper'>
 		<div id='header'>
-			<h1 id='title'>WaterCalc</h1>
-			<h4 id='brand'>Itasca County Family YMCA Pool Operator Toolset</h4>
+			<h1 id='title'>AquaCalc</h1>
 		</div>
-		<div id='header-bar'>
-			<button onclick='openInfo()'>More Info</button>
-		</div>
-		<div class='body'>
+		<div id='content'>
 			<div class='center'>
 				<div id='hottub-form'>
 					<form>
-						<label class='reg-text' for='hottub-alk'>Hot-Tub Alkalinity:</label><br>
+						<label class='reg-text' for='hottub-alk' style='color:white;'>Hot-Tub Alkalinity:</label><br>
 						<input type='number' id='hottub-alk' name='hottub-alk'><br>
 
-						<label class='reg-text' for='hottub-hard'>Hot-Tub Hardness:</label><br>
+						<label class='reg-text' for='hottub-hard' style='color:white;'>Hot-Tub Hardness:</label><br>
 						<input type='number' id='hottub-hard' name='hottub-hard'><br>
 						<input class='test-btn' type='submit' value='Calculate' onclick='testHottub()'>
 					</form>
 				</div>
 				<div id='pool-form'>
 					<form>
-						<label class='reg-text' for='pool-alk'>Pool Alkalinity:</label><br>
+						<label class='reg-text' for='pool-alk' style='color:white;'>Pool Alkalinity:</label><br>
 						<input type='number' id='pool-alk' name='pool-alk'><br>
 
-						<label class='reg-text' for='pool-hard'>Pool Hardness:</label><br>
+						<label class='reg-text' for='pool-hard' style='color:white;'>Pool Hardness:</label><br>
 						<input type='number' id='pool-hard' name='pool-hard'><br>
 						<input class='test-btn' type='submit' value='Calculate' onclick='testPool()'>
 					</form>
 				</div>
 				<div id='saturation-form'>
 					<form>
-						<label class='reg-text' for='sat-ph'>PH:</label><br>
+						<label class='reg-text' for='sat-ph' style='color:white;'>PH:</label><br>
 						<input type='number' id='sat-ph' name='sat-ph' step='0.1'><br>
 
-						<label class='reg-text' for='sat-temp'>Temperature (&#176;F):</label><br>
+						<label class='reg-text' for='sat-temp' style='color:white;'>Temperature (&#176;F):</label><br>
 						<input type='number' id='sat-temp' name='sat-temp'><br>
 
-						<label class='reg-text' for='sat-hard'>Hardness:</label><br>
+						<label class='reg-text' for='sat-hard' style='color:white;'>Hardness:</label><br>
 						<input type='number' id='sat-hard' name='sat-hard'><br>
 
-						<label class='reg-text' for='sat-alk'>Alkalinity:</label><br>
+						<label class='reg-text' for='sat-alk' style='color:white;'>Alkalinity:</label><br>
 					    <input type='number' id='sat-alk' name='sat-alk'><br>
 
-						<label class='reg-text' for='sat-tds'>Total Dissolved Solids:</label><br>
+						<label class='reg-text' for='sat-tds' style='color:white;'>Total Dissolved Solids:</label><br>
 						<input type='number' id='sat-tds' name='sat-tds'><br>
 
 						<input class='test-btn' type='submit' value='Calculate' onclick='testBalance()'>
 					</form>
 				</div>
+				<!--<div class='center'>-->
 				<div id='results'></div>
-				<button id='hottub-btn' onclick='openHottubMenu()'>Hot-Tub</button>
-				<button id='pool-btn' onclick='openPoolMenu()'>Pool</button>
-				<button id='saturation-index-btn' onclick='openSaturationIndexMenu()'>Water Balance</button>
-			</div>
+				<button id='hottub-btn' class='hottub-btn' onclick='openHottubMenu()'>Hot-Tub</button>
+				<button id='pool-btn' class='pool-btn' onclick='openPoolMenu()'>Pool</button>
+				<button id='saturation-index-btn' class='saturation-index-btn' onclick='openSaturationIndexMenu()'>Water Balance</button>			
+			</div>	
+		</div>
+		<div id='footer'>
+			<p style='color: #4F4F4F;text-align: center;padding-top:1em;'>C. 2021 John Garrison</p>
 		</div>
 	</div>
 	<script src='calc.js'></script>
-</body>
+	<script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
 
 </html>

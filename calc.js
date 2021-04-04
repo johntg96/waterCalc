@@ -1,10 +1,27 @@
 // calc.js
 
+const hottubBtn = document.getElementById('hottub-btn');
+const poolBtn = document.getElementById('pool-btn');
+const saturationIndexBtn = document.getElementById('saturation-index-btn');
+
 const openHottubMenu = () => {
 	document.getElementById('hottub-form').style.display = 'block';
 	document.getElementById('pool-form').style.display = 'none';
 	document.getElementById('saturation-form').style.display = 'none';
 	document.getElementById('results').style.display = 'none';
+
+
+	//if(hottubBtn.classList.contains('hottub-btn')) {
+	//	hottubBtn.classList.add('hottub-btn-active');
+	//	hottubBtn.classList.remove('hottub-btn');
+	//	poolBtn.classList.remove('pool-btn-active');
+	//	saturationIndexBtn.classList.remove('saturation-index-btn-active');
+	//} else if (hottubBtn.classList.contains('hottub-btn-active')) {
+	//	hottubBtn.classList.add('hottub-btn');
+	//	hottubBtn.classList.remove('hottub-btn-active');
+	//	poolBtn.classList.add('pool-btn');
+	//	saturationIndexBtn.classList.add('saturation-index-btn');
+	//}
 }
 
 const openPoolMenu = () => {
@@ -12,6 +29,20 @@ const openPoolMenu = () => {
 	document.getElementById('hottub-form').style.display = 'none';
 	document.getElementById('saturation-form').style.display = 'none';
 	document.getElementById('results').style.display = 'none';
+
+
+
+	//if(poolBtn.classList.contains('pool-btn')) {
+	//	poolBtn.classList.add('pool-btn-active');
+	//	poolBtn.classList.remove('pool-btn');
+	//	hottubBtn.classList.remove('hottub-btn-active');
+	//	saturationIndexBtn.classList.remove('saturation-index-btn-active');
+	//} else if (poolBtn.classList.contains('pool-btn-active')) {
+	//	poolBtn.classList.add('pool-btn');
+	//	poolBtn.classList.remove('pool-btn-active');
+	//	hottubBtn.classList.add('hottub-btn');
+	//	saturationIndexBtn.classList.add('saturation-index-btn');
+	//}
 }
 
 const openSaturationIndexMenu = () => {
@@ -19,6 +50,19 @@ const openSaturationIndexMenu = () => {
 	document.getElementById('pool-form').style.display = 'none';
 	document.getElementById('hottub-form').style.display = 'none';
 	document.getElementById('results').style.display = 'none';
+
+
+	//if(saturationIndexBtn.classList.contains('saturation-index-btn')) {
+	//	saturationIndexBtn.classList.add('saturation-index-btn-active');
+	//	saturationIndexBtn.classList.remove('saturation-index-btn');
+	//	hottubBtn.classList.remove('hottub-btn-active');
+	//	poolBtn.classList.remove('pool-btn-active');
+	//} else if (saturationIndexBtn.classList.contains('saturation-index-btn-active')) {
+	//	saturationIndexBtn.classList.add('saturation-index-btn');
+	//	saturationIndexBtn.classList.remove('saturation-index-btn-active');
+	//	hottubBtn.classList.add('hottub-btn');
+	//	poolBtn.classList.add('pool-btn');
+	//}
 }
 
 const resetValues = (formType, inputField) => {
@@ -266,7 +310,7 @@ let testBalance = () => {
 		document.getElementById('saturation-form').style.display = 'none';
 
 		let results = document.getElementById('results');
-		results.style.display = 'block';
+		results-active.display
 		results.innerHTML = '<h4 class="bold-text" style="text-align:center;">Saturation Index: <strong>' + saturationIndex + '</strong><br>' + scaleOrCorrode + '</h4>';
 	} else {
 		document.getElementById('pool-form').style.display = 'none';
@@ -281,5 +325,3 @@ let testBalance = () => {
 	
 
 }
-
-let openInfo = () => alert('Measurements based on 88,000 gallon Pool, 5,000 gallon Hot-Tub  -  C. 2020 John Garrison');
