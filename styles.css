@@ -73,11 +73,13 @@ p {
 
 .reg-text {
 	font-family: 'Open Sans', sans-serif;
+	color: white;
 }
 
 .bold-text {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
+	color:white;
 }
 
 .container {

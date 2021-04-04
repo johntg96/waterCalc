@@ -112,16 +112,16 @@ let testHottub = () => {
 
 	if(hottubAlk < 100) {
 		let hottubCalcAlk = 1.4 * 0.5 * (desiredHottubAlk / 10);
-		hottubAlkTest = 'add <strong>' + Math.round(100*hottubCalcAlk)/100 + '</strong> pounds of Sodium Bicarbonate';
+		hottubAlkTest = 'add <strong><span style="color:#F4B349;">' + Math.round(100*hottubCalcAlk)/100 + '</span></strong> pounds of Sodium Bicarbonate';
 	} else {
-		hottubAlkTest = '<em>Hot-Tub alkalinity greater than 100ppm</em><br>do <strong>NOT</strong> add Sodium Bicarbonate';
+		hottubAlkTest = '<em>Hot-Tub alkalinity greater than 100ppm</em><br>do <strong><span style="color:#F4B349;">NOT</span></strong> add Sodium Bicarbonate';
 	}
 
 	if(hottubHard < 200) {
 		let hottubCalcHard = 0.9 * 0.5 * (desiredHottubHard / 10);
-		hottubHardTest = 'add <strong>' + Math.round(100*hottubCalcHard)/100 + '</strong> pounds of Calcium Chloride';
+		hottubHardTest = 'add <strong><span style="color:#F4B349;">' + Math.round(100*hottubCalcHard)/100 + '</span></strong> pounds of Calcium Chloride';
 	} else {
-		hottubHardTest = '<em>Hot-Tub hardness greater than 200ppm</em><br>do <strong>NOT</strong> add Calcium Chloride';
+		hottubHardTest = '<em>Hot-Tub hardness greater than 200ppm</em><br>do <strong><span style="color:#F4B349;">NOT</span></strong> add Calcium Chloride';
 	}
 
 	document.getElementById('pool-form').style.display = 'none';
@@ -130,7 +130,7 @@ let testHottub = () => {
 
 	let results = document.getElementById('results');
 	results.style.display = 'block';
-	results.innerHTML = '<h4 class="bold-text">Alkalinity: ' + hottubAlk + '</h4><p class="reg-text">' + hottubAlkTest + '<p><br><h4 class="bold-text">Hardness: ' + hottubHard + '</h4><p class="reg-text">' + hottubHardTest + '</p>';
+	results.innerHTML = '<h4 class="bold-text">Alkalinity: ' + hottubAlk + '</h4><p class="reg-text">' + hottubAlkTest + '</p><br><h4 class="bold-text">Hardness: ' + hottubHard + '</h4><p class="reg-text">' + hottubHardTest + '</p>';
 }
 
 let testPool = () => {
@@ -157,16 +157,16 @@ let testPool = () => {
 
 	if(poolAlk < 100) {
 		let poolCalcAlk = 1.4 * 8.8 * (desiredPoolAlk / 10);
-		poolAlkTest = 'add <strong>' + Math.round(100*poolCalcAlk)/100 + '</strong> pounds of Sodium Bicarbonate';
+		poolAlkTest = 'add <strong><span style="color:#F4B349;">' + Math.round(100*poolCalcAlk)/100 + '<span></strong> pounds of Sodium Bicarbonate';
 	} else {
-		poolAlkTest = '<em>Pool alkalinity greater than 100ppm</em><br>do <strong>NOT</strong> add Sodium Bicarbonate';
+		poolAlkTest = '<em>Pool alkalinity greater than 100ppm</em><br>do <strong><span style="color:#F4B349;">NOT</span></strong> add Sodium Bicarbonate';
 	}
 
 	if(poolHard < 300) {
 		let poolCalcHard = 0.9 * 8.8 * (desiredPoolHard / 10);
-		poolHardTest = 'add <strong>' + Math.round(100*poolCalcHard)/100 + '</strong> pounds of Calcium Chloride';
+		poolHardTest = 'add <strong><span style="color:#F4B349;">' + Math.round(100*poolCalcHard)/100 + '<span></strong> pounds of Calcium Chloride';
 	} else {
-		poolHardTest = '<em>Pool hardness greater than 300ppm</em><br>do <strong>NOT</strong> add Calcium Chloride';
+		poolHardTest = '<em>Pool hardness greater than 300ppm</em><br>do <strong><span style="color:#F4B349;">NOT</span></strong> add Calcium Chloride';
 	}
 
 	document.getElementById('pool-form').style.display = 'none';
@@ -297,7 +297,7 @@ let testBalance = () => {
 	let scaleOrCorrode = undefined;
 
 	if(saturationIndex <= -0.4) {
-		scaleOrCorrode = '<span style="color: #593928;font-family:\'Frijole\', sans,serif;font-size: 2.8em;">Corrosive</span>';
+		scaleOrCorrode = '<span style="color: #B74F1C;font-family:\'Frijole\', sans,serif;font-size: 2.8em;">Corrosive</span>';
 	} else if(saturationIndex >= 0.4) {
 		scaleOrCorrode = '<span style="color: #7a7f2d;font-family:\'Frijole\', sans,serif;font-size: 2.8em;">Scaling</span>';
 	} else {
@@ -310,8 +310,8 @@ let testBalance = () => {
 		document.getElementById('saturation-form').style.display = 'none';
 
 		let results = document.getElementById('results');
-		results-active.display
-		results.innerHTML = '<h4 class="bold-text" style="text-align:center;">Saturation Index: <strong>' + saturationIndex + '</strong><br>' + scaleOrCorrode + '</h4>';
+		results.style.display = 'block';
+		results.innerHTML = '<h4 class="bold-text" style="text-align:center;">Saturation Index: <strong><span style="color:#F4B349;">' + saturationIndex + '</span></strong><br>' + scaleOrCorrode + '</h4>';
 	} else {
 		document.getElementById('pool-form').style.display = 'none';
 		document.getElementById('hottub-form').style.display = 'none';
