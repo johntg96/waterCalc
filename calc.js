@@ -130,7 +130,7 @@ let testHottub = () => {
 
 	let results = document.getElementById('results');
 	results.style.display = 'block';
-	results.innerHTML = '<h4 class="bold-text">Alkalinity: ' + hottubAlk + '<br>target: 100</h4><p class="reg-text">' + hottubAlkTest + '</p><br><h4 class="bold-text">Hardness: ' + hottubHard + '<br>target: 200</h4><p class="reg-text">' + hottubHardTest + '</p>';
+	results.innerHTML = '<h4 class="bold-text" style="text-align:left;">Current Alkalinity: ' + hottubAlk + '<br>Target: 100</h4><p class="reg-text" text-align:left;>' + hottubAlkTest + '</p><br><h4 class="bold-text" style="text-align:left;">Current Hardness: ' + hottubHard + '<br>Target: 200</h4><p class="reg-text" style="text-align:left;">' + hottubHardTest + '</p>';
 }
 
 let testPool = () => {
@@ -175,7 +175,7 @@ let testPool = () => {
 
 	let results = document.getElementById('results');
 	results.style.display = 'block';
-	results.innerHTML = '<h4 class="bold-text" >Alkalinity: ' + poolAlk + '<br>target: 50</h4><p class="reg-text">' + poolAlkTest + '<p><br><h4 class="bold-text">Hardness: ' + poolHard + '<br>target: 300</h4><p class="reg-text">' + poolHardTest + '</p>';
+	results.innerHTML = '<h4 class="bold-text" style="text-align:left;">Current Alkalinity: ' + poolAlk + '<br>Target: 50</h4><p class="reg-text" style="text-align:left;">' + poolAlkTest + '<p><br><h4 class="bold-text" style="text-align:left;">Current Hardness: ' + poolHard + '<br>Target: 300</h4><p class="reg-text" style="text-align:left;">' + poolHardTest + '</p>';
 }
 
 let testBalance = () => {
