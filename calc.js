@@ -130,7 +130,7 @@ let testHottub = () => {
 
 	let results = document.getElementById('results');
 	results.style.display = 'block';
-	results.innerHTML = '<h4 class="bold-text" style="text-align:left;">Current Alkalinity: ' + hottubAlk + '<br>Target: 100</h4><p class="reg-text" text-align:left;>' + hottubAlkTest + '</p><br><h4 class="bold-text" style="text-align:left;">Current Hardness: ' + hottubHard + '<br>Target: 200</h4><p class="reg-text" style="text-align:left;">' + hottubHardTest + '</p>';
+	results.innerHTML = '<h4 class="bold-text" style="text-align:left;"><span style="color:#d84a43;font-family:\'Zilla Slab Highlight\', cursive;font-size:2em;text-align:center;">Hot-Tub</span><br>Current Alkalinity: ' + hottubAlk + '<br>Target: 100</h4><p class="reg-text" text-align:left;>' + hottubAlkTest + '</p><br><h4 class="bold-text" style="text-align:left;">Current Hardness: ' + hottubHard + '<br>Target: 200</h4><p class="reg-text" style="text-align:left;">' + hottubHardTest + '</p>';
 }
 
 let testPool = () => {
@@ -175,7 +175,7 @@ let testPool = () => {
 
 	let results = document.getElementById('results');
 	results.style.display = 'block';
-	results.innerHTML = '<h4 class="bold-text" style="text-align:left;">Current Alkalinity: ' + poolAlk + '<br>Target: 50</h4><p class="reg-text" style="text-align:left;">' + poolAlkTest + '<p><br><h4 class="bold-text" style="text-align:left;">Current Hardness: ' + poolHard + '<br>Target: 300</h4><p class="reg-text" style="text-align:left;">' + poolHardTest + '</p>';
+	results.innerHTML = '<h4 class="bold-text" style="text-align:left;"><span style="color:#287dcc;font-family:\'Zilla Slab Highlight\', cursive;font-size:2em;text-align:center;">Pool</span><br>Current Alkalinity: ' + poolAlk + '<br>Target: 50</h4><p class="reg-text" style="text-align:left;">' + poolAlkTest + '<p><br><h4 class="bold-text" style="text-align:left;">Current Hardness: ' + poolHard + '<br>Target: 300</h4><p class="reg-text" style="text-align:left;">' + poolHardTest + '</p>';
 }
 
 let testBalance = () => {
@@ -297,11 +297,11 @@ let testBalance = () => {
 	let scaleOrCorrode = undefined;
 
 	if(saturationIndex <= -0.4) {
-		scaleOrCorrode = '<span style="color: #B74F1C;font-family:\'Frijole\', sans,serif;font-size: 2.8em;">Corrosive</span>';
+		scaleOrCorrode = '<span style="color: #B74F1C;font-family:\'Frijole\', arial;font-size: 2.8em;text-align:center;">Corrosive</span>';
 	} else if(saturationIndex >= 0.4) {
-		scaleOrCorrode = '<span style="color: #7a7f2d;font-family:\'Frijole\', sans,serif;font-size: 2.8em;">Scaling</span>';
+		scaleOrCorrode = '<span style="color: #7a7f2d;font-family:\'Frijole\', arial;font-size: 2.8em;text-align:center;">Scaling</span>';
 	} else {
-		scaleOrCorrode = '<span style="color: #86bff4;font-family:\'Faster One\', sans,serif;font-size: 2.8em;">Balanced</span>';
+		scaleOrCorrode = '<span style="color: #86bff4;font-family:\'Faster One\', arial;font-size: 2.8em;text-align:center;">Balanced</span>';
 	}
 
 	if(errorInput == false) {
@@ -311,7 +311,7 @@ let testBalance = () => {
 
 		let results = document.getElementById('results');
 		results.style.display = 'block';
-		results.innerHTML = '<h4 class="bold-text" style="text-align:center;">Saturation Index: <strong><span style="color:#F4B349;">' + saturationIndex + '</span></strong><br>' + scaleOrCorrode + '</h4>';
+		results.innerHTML = '<h4 class="bold-text" style="text-align:left;"><span style="color:#69c155;font-family:\'Zilla Slab Highlight\', cursive;font-size:2em;">Water Balance</span><br><br>Saturation Index: <strong><span style="color:#F4B349;">' + saturationIndex + '</span></strong><br>' + scaleOrCorrode + '</h4>';
 	} else {
 		document.getElementById('pool-form').style.display = 'none';
 		document.getElementById('hottub-form').style.display = 'none';
