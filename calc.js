@@ -130,7 +130,7 @@ let testHottub = () => {
 
 	let results = document.getElementById('results');
 	results.style.display = 'block';
-	results.innerHTML = '<h4 class="bold-text">Alkalinity: ' + hottubAlk + '</h4><p class="reg-text">' + hottubAlkTest + '</p><br><h4 class="bold-text">Hardness: ' + hottubHard + '</h4><p class="reg-text">' + hottubHardTest + '</p>';
+	results.innerHTML = '<h4 class="bold-text">Alkalinity: ' + hottubAlk + '<br>target: 100</h4><p class="reg-text">' + hottubAlkTest + '</p><br><h4 class="bold-text">Hardness: ' + hottubHard + '<br>target: 200</h4><p class="reg-text">' + hottubHardTest + '</p>';
 }
 
 let testPool = () => {
@@ -155,11 +155,11 @@ let testPool = () => {
 		desiredPoolHard = 300 - poolHard;
 	}
 
-	if(poolAlk < 100) {
+	if(poolAlk < 50) {
 		let poolCalcAlk = 1.4 * 8.8 * (desiredPoolAlk / 10);
 		poolAlkTest = 'add <strong><span style="color:#F4B349;">' + Math.round(100*poolCalcAlk)/100 + '<span></strong> pounds of Sodium Bicarbonate';
 	} else {
-		poolAlkTest = '<em>Pool alkalinity greater than 100ppm</em><br>do <strong><span style="color:#F4B349;">NOT</span></strong> add Sodium Bicarbonate';
+		poolAlkTest = '<em>Pool alkalinity greater than 50ppm</em><br>do <strong><span style="color:#F4B349;">NOT</span></strong> add Sodium Bicarbonate';
 	}
 
 	if(poolHard < 300) {
@@ -175,7 +175,7 @@ let testPool = () => {
 
 	let results = document.getElementById('results');
 	results.style.display = 'block';
-	results.innerHTML = '<h4 class="bold-text" >Alkalinity: ' + poolAlk + '</h4><p class="reg-text">' + poolAlkTest + '<p><br><h4 class="bold-text">Hardness: ' + poolHard + '</h4><p class="reg-text">' + poolHardTest + '</p>';
+	results.innerHTML = '<h4 class="bold-text" >Alkalinity: ' + poolAlk + '<br>target: 50</h4><p class="reg-text">' + poolAlkTest + '<p><br><h4 class="bold-text">Hardness: ' + poolHard + '<br>target: 300</h4><p class="reg-text">' + poolHardTest + '</p>';
 }
 
 let testBalance = () => {
