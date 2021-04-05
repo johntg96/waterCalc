@@ -12,42 +12,42 @@ html, body {
 }
 
 #wrapper {
-  padding-top: 50px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #222222;
+  	padding-top: 50px;
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background-color: #222222;
 }
 
 #header {
-  margin-top: -50px;
-  height: 50px;
-  position: fixed;
-  width: 100%;
-  background-color:#21567B;
-  box-shadow: 0px -12px 43px -6px rgba(0,0,0,0.75) inset;
-  -webkit-box-shadow: 0px -12px 43px -6px rgba(0,0,0,0.75) inset;
-  -moz-box-shadow: 0px -12px 43px -6px rgba(0,0,0,0.75) inset;
+ 	margin-top: -50px;
+  	height: 50px;
+  	position: fixed;
+  	width: 100%;
+  	background-color:#21567B;
+  	box-shadow: 0px -12px 43px -6px rgba(0,0,0,0.75) inset;
+  	-webkit-box-shadow: 0px -12px 43px -6px rgba(0,0,0,0.75) inset;
+  	-moz-box-shadow: 0px -12px 43px -6px rgba(0,0,0,0.75) inset;
 }
 
 #content {
-  min-height: 100%;
-  background-color: #222222;
+	min-height: 100%;
+  	background-color: #292929;
 }
 
 #footer {
-  margin-bottom: -50px;
-  height: 50px;
-  position: fixed; 
-  background-color: #161616;
-  width: 100%;
+  	margin-bottom: -50px;
+  	height: 50px;
+  	position: fixed; 
+  	background-color: #161616;
+  	width: 100%;
 }
 
 p {
-  margin: 0;
-  padding: 0;
+  	margin: 0;
+  	padding: 0;
 }
 
 #title {
@@ -257,18 +257,30 @@ p {
 
 #hottub-form {
 	display: none;
+	-webkit-box-shadow: 0px 0px 15px 0px #0C0C0C; 
+	box-shadow: 0px 0px 15px 0px #0C0C0C;
+	background-color: #1f1f1f;
+	border-radius: 0.5em;
 }
 
 #pool-form {
 	display: none;
+	-webkit-box-shadow: 0px 0px 15px 0px #0C0C0C; 
+	box-shadow: 0px 0px 15px 0px #0C0C0C;
+	background-color: #1f1f1f;
+	border-radius: 0.5em;
 }
 
 #saturation-form {
 	display: none;
+	-webkit-box-shadow: 0px 0px 15px 0px #0C0C0C; 
+	box-shadow: 0px 0px 15px 0px #0C0C0C;
+	background-color: #1f1f1f;
+	border-radius: 0.5em;
 }
 
 #forms {
-	margin-top: 2em;
+	margin-top: 2.5em;
 }
 
 form {
@@ -309,6 +321,11 @@ input {
 #results {
 	display: none;
 	margin: 0 auto;
+	padding: 1em;
+	-webkit-box-shadow: 0px 0px 15px 0px #0C0C0C; 
+	box-shadow: 0px 0px 15px 0px #0C0C0C;
+	background-color: #1f1f1f;
+	border-radius: 0.5em;
 	/*margin-top: 8em;
 	margin-bottom: 3em;*/
 }
