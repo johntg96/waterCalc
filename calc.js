@@ -321,7 +321,8 @@ let testBalance = () => {
 		results.style.display = 'block';
 		results.innerHTML = '<h4 class="bold-text" style="text-align:center;">Invalid Input<br>Try Again</h4>';
 	}
+}
 
-	
-
+const openInfo = () => {
+	alert('Measurements based on a 5000 gal. Hot-Tub and 80,000 gal. Pool. C. 2021 John Garrison');
 }
